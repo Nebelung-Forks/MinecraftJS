@@ -18,4 +18,4 @@ You can now access MinecraftJS from `http://localhost:8080`.
 ### Credits
 MinecraftJS is created and maintained by Karlee Rae#7317. All images are copyright and owned by Mojang AB.
 
-Be sure to check out official game Minecraft at <a href="https://minecraft.net">minecraft.net</a>.
+Be sure to check out the official game Minecraft at <a href="https://minecraft.net">minecraft.net</a>.
