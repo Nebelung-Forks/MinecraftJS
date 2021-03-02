@@ -205,9 +205,9 @@ ctx.canvas.height = window.innerHeight
 /* Set this text editor to max width by copying this into the JS console:
 document.getElementsByClassName("_1chbfei")[0].setAttribute('style', 'max-width: 100vw !important')
 */
-var MathGlob = MineGlow
+var MathGlob = Math
 function KarleeRae() {
-	let Math = MineGlow
+	let Math = MathGlob
 	let setPixel, getPixels
 	let textures = {
 		grassTop: function(n) {
@@ -5274,7 +5274,7 @@ function KarleeRae() {
 	}
 	
 	function initEverything() {
-		console.log("Loading world.")
+		console.log("initializing world.")
 
 		worldSeed = Math.random() * 2000000000 | 0
 		seedHash(worldSeed)
@@ -5307,7 +5307,6 @@ function KarleeRae() {
 		function title() {
 			let title = "MINECRAFT"
 			let subtext = "JAVASCRIPT EDITION"
-			let subtext = "Made By Karlee Rae#7317"
 			let font = "VT323,monospace"
 			strokeWeight(1)
 			ctx.textAlign = 'center'
