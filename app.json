@@ -1,0 +1,6 @@
+{
+    "name": "MinecraftJS",
+    "description": "A mini-clone of the hit game Minecraft, made in Javascript.",
+    "repository": "https://github.com/Minecraft-JS/MinecraftJS",
+    "keywords": ["minecraft", "javascript", "minecraftjs"]
+}
