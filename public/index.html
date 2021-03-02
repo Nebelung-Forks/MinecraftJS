@@ -4955,7 +4955,7 @@ function MineKhan() {
 		gl.viewport(0, 0, width, height)
 		initButtons()
 		initBackgrounds()
-		inventory.size = 40 * Math.min(width, height) / 600
+		inventory.size = 80 * Math.min(width, height) / 600
 		genIcons()
 		use3d()
 		p.FOV(p.currentFov + 0.0001)
@@ -5157,11 +5157,11 @@ function MineKhan() {
 	}
 	function initPlayer() {
 		p = new Camera()
-		p.speed = 1.2
+		p.speed = 0.001
 		p.velocity = new PVector(0, 0, 0)
 		p.pos = new Float32Array(3)
-		p.sprintSpeed = 6.5
-		p.flySpeed = 4.5
+		p.sprintSpeed = 3.5
+		p.flySpeed = 2.5
 		p.x = 8
 		p.y = superflat ? 6 : (Math.round(noise(8 * generator.smooth, 8 * generator.smooth) * generator.height) + 2 + generator.extra)
 		p.z = 8
@@ -5172,10 +5172,10 @@ function MineKhan() {
 		p.bottomH = 1.62
 		p.topH = 0.18
 		p.onGround = false
-		p.jumpSpeed = 0.3
+		p.jumpSpeed = 0.4
 		p.sprinting = false
 		p.maxYVelocity = 1.5
-		p.gravityStength = -0.032
+		p.gravityStength = -0.0001
 		p.lastUpdate = win.performance.now()
 		p.lastBreak = Date.now()
 		p.lastPlace = Date.now()
