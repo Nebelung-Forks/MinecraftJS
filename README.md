@@ -22,17 +22,18 @@ Website Was Made and owned by Quite A Fancy Emerald#0001 (owner and creator of H
 
 ### people that need to be mentioned :)
 Karlee Rae Brother-Gave me a lot of confidence to do this project.
-```
+
 Shirt#1337-Fun guy
-```
+
 Mikelime#8816-Guy who I started coding becuase of
-```
+
 Nautica#0001-someone who told me what to do on my code cause I fucked up
-```
+
 B3ATDROP3R#5512-One of the people who makes proxy's
-```
+
 kinglalu#2780-person who told me to chage textures (I ignored him xD)(prolly should change them tho)
 
+### Mojang Information.
 All images are copyright and owned by Mojang AB.
 
 Be sure to check out the official game Minecraft at <a href="https://minecraft.net">minecraft.net</a>.
