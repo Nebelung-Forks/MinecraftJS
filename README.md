@@ -17,7 +17,7 @@ You can now access MinecraftJS from `http://localhost:8080`.
 
 ### Credits
 MinecraftJS is created and maintained by Karlee Rae#7317. 
-```
+
 Website Was Made and owned by Quite A Fancy Emerald#0001 (owner and creator of Holy Unblocker)
 
 ### people that need to be mentioned :)
