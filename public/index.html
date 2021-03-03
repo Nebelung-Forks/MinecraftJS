@@ -4282,7 +4282,7 @@ function MineKhan() {
 		Button.add(width / 2, height / 2 - 20, 400, 40, "Singleplayer", "main menu", r => changeScene("loadsave menu"))
 		Button.add(width / 2, height / 2 + 35, 400, 40, "Multiplayer", "main menu", nothing, always, "Multiplayer isn't possible at this time.")
 		Button.add(width / 2, height / 2 + 90, 400, 40, "Options", "main menu", r => changeScene("options"))
-                
+
 		// Creation menu buttons
 		Button.add(width / 2, 135, 300, 40, ["World Type: Normal", "World Type: Superflat"], "creation menu", r => superflat = r === "World Type: Superflat")
 		Button.add(width / 2, 185, 300, 40, ["Trees: On", "Trees: Off"], "creation menu", r => trees = r === "Trees: On")
@@ -4313,7 +4313,7 @@ function MineKhan() {
 			win.world = world
 			world.loadChunks()
 			world.chunkGenQueue.sort(sortChunks)
-			changeScene("loading Karlee Rae Says Hi")
+			changeScene("loading")
 		})
 		Button.add(width / 2, height - 40, 300, 40, "Cancel", "creation menu", r => changeScene(previousScreen))
 
@@ -4401,7 +4401,7 @@ function MineKhan() {
 		Button.add(width / 2, 395, width / 3, 40, "Back", "comingsoon menu", r => changeScene(previousScreen))
 
 		// Multiplayer buttons
-		Button.add(width / 2, 395, width / 3, 40, "Â¯\\_(ãƒ„)_/Â¯", "multiplayer menu", r => changeScene("main menu"))
+		Button.add(width / 2, 395, width / 3, 40, "Ã‚Â¯\\_(Ã£Æ’â€ž)_/Ã‚Â¯", "multiplayer menu", r => changeScene("main menu"))
 
 		// Settings Sliders
 		Slider.add(width/2, 245, width / 3, 40, "options", "Render Distance", 1, 32, "renderDistance", val => settings.renderDistance = Math.round(val))
@@ -5010,7 +5010,7 @@ function MineKhan() {
 			gl = canv.getContext("webgl", { preserveDrawingBuffer: true, antialias: false, premultipliedAlpha: false })
 			let ext = gl.getExtension('OES_element_index_uint')
 			if (!ext) {
-				alert("Please use a supported browser, or update your current browser to continue to Minecraft.")
+				alert("Please use a supported browser, or update your current browser.")
 			}
 			gl.viewport(0, 0, canv.width, canv.height)
 			gl.enable(gl.DEPTH_TEST)
@@ -5157,10 +5157,10 @@ function MineKhan() {
 	}
 	function initPlayer() {
 		p = new Camera()
-		p.speed = 0.001
+		p.speed = 0.075
 		p.velocity = new PVector(0, 0, 0)
 		p.pos = new Float32Array(3)
-		p.sprintSpeed = 3.5
+		p.sprintSpeed = 1.5
 		p.flySpeed = 2.5
 		p.x = 8
 		p.y = superflat ? 6 : (Math.round(noise(8 * generator.smooth, 8 * generator.smooth) * generator.height) + 2 + generator.extra)
@@ -5172,7 +5172,7 @@ function MineKhan() {
 		p.bottomH = 1.62
 		p.topH = 0.18
 		p.onGround = false
-		p.jumpSpeed = 0.4
+		p.jumpSpeed = 0.3
 		p.sprinting = false
 		p.maxYVelocity = 1.5
 		p.gravityStength = -0.032
@@ -5274,7 +5274,7 @@ function MineKhan() {
 	}
 	
 	function initEverything() {
-		console.log("initializing world.")
+		console.log("Initializing world.")
 
 		worldSeed = Math.random() * 2000000000 | 0
 		seedHash(worldSeed)
@@ -5306,7 +5306,7 @@ function MineKhan() {
 	(function() {
 		function title() {
 			let title = "MINECRAFT"
-			let subtext = "Made By Karlee Rae And Quite A Fancy Emerald"
+			let subtext = "JAVASCRIPT EDITION"
 			let font = "VT323,monospace"
 			strokeWeight(1)
 			ctx.textAlign = 'center'
@@ -5454,7 +5454,7 @@ function MineKhan() {
 		Slider.draw()
 	}, 100)
 
-	let debugMenu = true
+	let debugMenu = false
 	function gameLoop() {
 		let frameStart = win.performance.now()
 		if (!gl) {
