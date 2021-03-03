@@ -4955,7 +4955,7 @@ function MineKhan() {
 		gl.viewport(0, 0, width, height)
 		initButtons()
 		initBackgrounds()
-		inventory.size = 80 * Math.min(width, height) / 600
+		inventory.size = 40 * Math.min(width, height) / 600
 		genIcons()
 		use3d()
 		p.FOV(p.currentFov + 0.0001)
@@ -5175,7 +5175,7 @@ function MineKhan() {
 		p.jumpSpeed = 0.4
 		p.sprinting = false
 		p.maxYVelocity = 1.5
-		p.gravityStength = -0.0001
+		p.gravityStength = -0.003
 		p.lastUpdate = win.performance.now()
 		p.lastBreak = Date.now()
 		p.lastPlace = Date.now()
@@ -5307,7 +5307,7 @@ function MineKhan() {
 		function title() {
 			let title = "MINECRAFT"
 			let subtext = "JAVASCRIPT EDITION"
-			let subtext = "Made By Karlee Rae#7317"
+			let footnote = "Made By Karlee Rae#7317"
 			let font = "VT323,monospace"
 			strokeWeight(1)
 			ctx.textAlign = 'center'
