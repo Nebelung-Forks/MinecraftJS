@@ -1,6 +1,9 @@
 # MinecraftJS
  A mini-clone of the hit game Minecraft, made in Javascript.
 
+### Side note:
+A lot of people tell me to fork it from willard. The Reason I am not going to is because I am going to make a lot of edits to a point where I do not want to repeat just to make a new repo.
+
 ### Setup
 Note that this doesn't require a backend. You can play this in-browser without any sort of environment. This even has offline support with saves! 
 Simply clone the repository and navigate to the public folder then open `index.html.`
@@ -27,11 +30,13 @@ Shirt#1337-Fun guy
 
 Mikelime#8816-Guy who I started coding becuase of
 
-Nautica#0001-someone who told me what to do on my code cause I fucked up
+Nautica#0001-someone who told me what to do on the code cause I fucked it up
 
 B3ATDROP3R#5512-One of the people who makes proxy's
 
 kinglalu#2780-person who told me to chage textures (I ignored him xD)(prolly should change them tho)
+
+Willard21_2#2815-Owner of MineKhan (This is a spin off of his game) https://github.com/Willard21/MineKhan
 
 ### Mojang Information.
 All images are copyright and owned by Mojang AB.
