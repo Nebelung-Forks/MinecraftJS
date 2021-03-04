@@ -5157,11 +5157,11 @@ function MineKhan() {
 	}
 	function initPlayer() {
 		p = new Camera()
-		p.speed = 0.075
+		p.speed = 0.090
 		p.velocity = new PVector(0, 0, 0)
 		p.pos = new Float32Array(3)
-		p.sprintSpeed = 1.5
-		p.flySpeed = 2.5
+		p.sprintSpeed = 1.9
+		p.flySpeed = 2.6
 		p.x = 8
 		p.y = superflat ? 6 : (Math.round(noise(8 * generator.smooth, 8 * generator.smooth) * generator.height) + 2 + generator.extra)
 		p.z = 8
@@ -5172,7 +5172,7 @@ function MineKhan() {
 		p.bottomH = 1.62
 		p.topH = 0.18
 		p.onGround = false
-		p.jumpSpeed = 0.3
+		p.jumpSpeed = 0.4
 		p.sprinting = false
 		p.maxYVelocity = 1.5
 		p.gravityStength = -0.032
