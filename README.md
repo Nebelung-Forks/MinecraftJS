@@ -1,9 +1,6 @@
 # MinecraftJS
  A mini-clone of the hit game Minecraft, made in Javascript.
 
-### Side note:
-A lot of people tell me to fork it from willard. The Reason I am not going to is because I am going to make a lot of edits to a point where I do not want to repeat just to make a new repo.
-
 ### Setup
 Note that this doesn't require a backend. You can play this in-browser without any sort of environment. This even has offline support with saves! 
 Simply clone the repository and navigate to the public folder then open `index.html.`
