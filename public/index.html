@@ -2,7 +2,6 @@
 <!-- @Minecraft version beta 0.2.1
 	NOTE:
 The "Save" button saves your world to your local browser. Nobody else can see it. However, if you're on a public or shared computer, that save may be deleted unexpectedly. So it's a good idea to keep a safe copy of your save string somewhere where it won't be deleted.
-To share your save with other people, copy your world string into the "loadString" variable on line 189.
 	Controls:
  * Right-click (or ctrl + left-click): place block
  * Left-click: Remove block
@@ -6342,11 +6341,11 @@ function MineKhan() {
 	function initBackgrounds() {
 		// Home screen background
 		use3d()
-		gl.clearColor(sky[0], sky[1], sky[3], 1.0)
+		gl.clearColor(sky[1], sky[1], sky[2], 1.0)
 		gl.clear(gl.DEPTH_BUFFER_BIT | gl.COLOR_BUFFER_BIT)
-		FOV(101)
+		FOV(100)
 		const HALF_PI = Math.PI / 2
-		initModelView(null, 0, 0.5, 0, -HALF_PI / 28, -HALF_PI / 3)
+		initModelView(null, 0, 0.5, 0, -HALF_PI / 25, -HALF_PI / 3)
 		gl.disableVertexAttribArray(glCache.aShadow)
 		gl.disableVertexAttribArray(glCache.aSkylight)
 		gl.disableVertexAttribArray(glCache.aBlocklight)
@@ -6925,7 +6924,7 @@ function MineKhan() {
 		Slider.draw()
 	}, 100)
 
-	let debugMenu = false
+	let debugMenu = true
 	function gameLoop() {
 		let frameStart = performance.now()
 		if (!gl) {
