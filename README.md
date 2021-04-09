@@ -20,6 +20,8 @@ MinecraftJS is created and maintained by Karlee Rae#7317.
 
 Website Was Made and owned by Quite A Fancy Emerald#0001 (owner and creator of Holy Unblocker)
 
+MinecraftJS Original Creator Willard. (Spin off from his original game)
+
 ### people that need to be mentioned :)
 Karlee Rae Brother-Gave me a lot of confidence to do this project.
 
