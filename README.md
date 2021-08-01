@@ -1,5 +1,7 @@
 # MinecraftJS
  A mini-clone of the hit game Minecraft, made in Javascript.
+ 
+### Deleted repo by [Minecraft JS](https://github.com/minecraft-js)
 
 ### Setup
 Note that this doesn't require a backend. You can play this in-browser without any sort of environment. This even has offline support with saves! 
